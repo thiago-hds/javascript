@@ -27,8 +27,8 @@ console.log(Number.isNaN(NaN)); // true
 /* Number.isFinite */
 // testa se é um número finito (não Infinity)
 console.log(Number.isFinite(20)); // true
-console.log(Number.isFinite('20')); // false
-console.log(Number.isFinite(+'20X')); // true (NaN)
+console.log(Number.isFinite('20')); // false (string)
+console.log(Number.isFinite(+'20X')); // false (NaN)
 console.log(Number.isFinite(23 / 0)); // false (Infinity)
 
 /* Number.isInteger */

@@ -16,13 +16,13 @@ console.log('3.12312312 truncado', Math.trunc(3.12312312));
 
 // random
 console.log('random:', Math.random()); // gera um numero aleatório entre 0 e 1
-console.log('random inteiro entre 0 e 9:', Math.trunc(Math.random() * 10));
-console.log('random inteiro entre 1 e 10:', Math.trunc(Math.random() * 10) + 1);
+console.log('random inteiro entre 0 e 9:', Math.floor(Math.random() * 10));
+console.log('random inteiro entre 1 e 10:', Math.floor(Math.random() * 10) + 1);
 
 // gerar dois numero aleatório entre min e max:
 const randomInt = (min, max) => {
   // Math.random() gera um numero entre 0...1
-  // 0...1 * (max - min) = 0..(max - min)
+  // 0...1 * (max - min) = 0...(max - min)
   // 0...(max - min) + min = min...max
   return Math.floor(Math.random() * (max - min) + 1) + min;
 };
@@ -40,3 +40,5 @@ console.log(Math.trunc(-3.4)); // -3
 
 // formatando numeros
 console.log((2.4).toFixed(3)); // "2.400" -> numero como string com 3 casas decimais
+
+console.log(Math.abs(-76)); // 76
